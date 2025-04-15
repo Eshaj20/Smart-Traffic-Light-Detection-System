@@ -30,7 +30,7 @@ flowchart TD
     H --> B
 ```
 
-🗂️ Project Structure
+## 🗂️ Project Structure
 
 ```bash
 traffic_light_project/
@@ -56,8 +56,9 @@ traffic_light_project/
 └── README.md                 # This file
 ```
 ---------------------------------------------------------------------------------------
-⚙️ Setup Instructions
-🧰 Hardware Required
+## ⚙️ Setup Instructions
+
+# 🧰 Hardware Required
 Raspberry Pi (with GPIO support)
 
 USB Camera or Pi Camera
@@ -70,7 +71,7 @@ Power Supply or Battery
 
 (Optional) LEDs for status display
 --------------------------------------------------------------------------------
-🧪 Software Installation
+## 🧪 Software Installation
 
 Install dependencies:
                     
@@ -92,7 +93,7 @@ Then open your browser and go to http://localhost:5000/ to view the dashboard.
 
 
 ---------------------------------------------------------------------------------------------------------------
-🔍 How It Works
+## 🔍 How It Works
 The camera captures video frames.
 
 The YOLOv8 model detects traffic light color in real time.
@@ -108,7 +109,7 @@ Green: Move the car
 GPIO pins are triggered to control the servo motor.
 
 -------------------------------------------------------
-🚀 Future Scope
+## 🚀 Future Scope
 Add distance estimation using ultrasonic sensors
 
 Integrate a mobile app for remote monitoring
