@@ -58,7 +58,8 @@ traffic_light_project/
 ---------------------------------------------------------------------------------------
 ## ⚙️ Setup Instructions
 
-🧰 Hardware Required
+🧰 Hardware Required : 
+
 Raspberry Pi (with GPIO support)
 
 USB Camera or Pi Camera
