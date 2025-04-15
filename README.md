@@ -58,7 +58,7 @@ traffic_light_project/
 ---------------------------------------------------------------------------------------
 ## ⚙️ Setup Instructions
 
-# 🧰 Hardware Required
+🧰 Hardware Required
 Raspberry Pi (with GPIO support)
 
 USB Camera or Pi Camera
@@ -70,6 +70,7 @@ Breadboard & Jumper Wires
 Power Supply or Battery
 
 (Optional) LEDs for status display
+
 --------------------------------------------------------------------------------
 ## 🧪 Software Installation
 
