@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Traffic Light Detection</title>
+</head>
+<body>
+    <h1>Smart Traffic Light Detection System</h1>
+    <p>Current Traffic Light: <span id="traffic-light">Loading...</span></p>
+
+    <script>
+        setInterval(function() {
+            fetch('/status')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('traffic-light').innerText = data.traffic_light;
+                });
+        }, 1000);
+    </script>
+</body>
+</html>
