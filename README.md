@@ -33,27 +33,17 @@ flowchart TD
 ## 🗂️ Project Structure
 
 ```bash
-traffic_light_project/
+Smart_Traffic_Light_Detection/
 │
-├── app/                     
-│   ├── __init__.py           # Initialize Flask app
-│   ├── routes.py             # Flask routes (web interface)
-│   └── controller.py         # Logic to handle detection and control
-│
-├── model/                   
-│   └── traffic_light_model.py # YOLO-based traffic light detection
-│
-├── hardware/                
-│   └── car_controller.py      # GPIO-based motor control
-│
-├── templates/                
-│   └── index.html             # Frontend (if using Flask UI)
-│
-├── static/                   # Static assets like CSS/JS
-│
-├── main.py                   # Entry point to run the system
-├── requirements.txt          # List of dependencies
-└── README.md                 # This file
+├── camera.py          # Captures video from camera
+├── detect_traffic.py  # Contains YOLOv8 model loading and traffic light detection code
+├── vehicle_control.py # Controls the servo motor based on light color
+├── app.py             # Optional Flask backend for monitoring
+├── requirements.txt   # Python dependencies
+├── templates/
+│   └── index.html     # Frontend for Flask
+└── README.md          # Project description and setup instructions
+
 ```
 ---------------------------------------------------------------------------------------
 ## ⚙️ Setup Instructions
