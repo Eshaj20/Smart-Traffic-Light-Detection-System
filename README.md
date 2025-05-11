@@ -50,20 +50,26 @@ Smart_Traffic_Light_Detection/
 
 🧰 Hardware Required : 
 
-Raspberry Pi (with GPIO support)
-
-USB Camera or Pi Camera
-
-Servo Motor
-
-Breadboard & Jumper Wires
-
-Power Supply or Battery
-
-(Optional) LEDs for status display
+- Raspberry Pi (with GPIO support)
+- USB Camera or Pi Camera
+- Servo Motor
+- Breadboard & Jumper Wires
+- Power Supply or Battery
+- (Optional) LEDs for status display
 
 --------------------------------------------------------------------------------
 ## 🧪 Software Installation
+
+requirements.txt:
+   
+This file lists all the dependencies.
+
+flask
+opencv-python
+torch
+torchvision
+RPi.GPIO
+
 
 Install dependencies:
                     
@@ -73,41 +79,25 @@ Run the main system:
                        
                        python main.py
                        
-This starts the camera, detects signals, and controls the car.
-
-
+Connect your camera and servo motor to the Raspberry Pi.
 
 Run Flask backend (optional):
                        
                        python app/routes.py
                        
-Then open your browser and go to http://localhost:5000/ to view the dashboard.
-
+Visit the web interface at:
+                       
+                       http://localhost:5000
 
 ---------------------------------------------------------------------------------------------------------------
 ## 🔍 How It Works
-The camera captures video frames.
 
-The YOLOv8 model detects traffic light color in real time.
-
-The system makes a decision:
-
-Red: Stop the car
-
-Yellow: Prepare to stop
-
-Green: Move the car
+- The camera captures video frames.
+- The YOLOv8 model detects traffic light color in real time.
+- The system makes a decision:
+- Red: Stop the car
+- Yellow: Prepare to stop
+- Green: Move the car
 
 GPIO pins are triggered to control the servo motor.
-
--------------------------------------------------------
-## 🚀 Future Scope
-Add distance estimation using ultrasonic sensors
-
-Integrate a mobile app for remote monitoring
-
-Use cloud dashboard for city-wide traffic management
-
-Add lane detection and pedestrian recognition
-
 
