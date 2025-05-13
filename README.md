@@ -1,10 +1,10 @@
-# 🚦 Smart Traffic Light Detection System
+## Smart Traffic Light Detection System
 
 This is an AI-based smart traffic light detection system that helps control a vehicle's movement based on traffic signal recognition. The system uses a Raspberry Pi, a camera, and a YOLO model to detect the color of the traffic light (Red, Yellow, Green), and then it either moves or stops the vehicle using a servo motor.
 
 ---
 
-## 📌 Features
+# Features
 
 - Real-time detection of traffic light colors using YOLOv8
 - Automatic control of vehicle movement (stop/go)
@@ -14,7 +14,7 @@ This is an AI-based smart traffic light detection system that helps control a ve
 
 ---
 
-## 🧠 System Flow
+# System Flow
 
 ```mermaid
 flowchart TD
@@ -30,7 +30,7 @@ flowchart TD
     H --> B
 ```
 
-## 🗂️ Project Structure
+# Project Structure
 
 ```bash
 Smart_Traffic_Light_Detection/
@@ -46,9 +46,9 @@ Smart_Traffic_Light_Detection/
 
 ```
 ---------------------------------------------------------------------------------------
-## ⚙️ Setup Instructions
+# Setup Instructions
 
-🧰 Hardware Required : 
+Hardware Required : 
 
 - Raspberry Pi (with GPIO support)
 - USB Camera or Pi Camera
@@ -58,7 +58,7 @@ Smart_Traffic_Light_Detection/
 - (Optional) LEDs for status display
 
 --------------------------------------------------------------------------------
-## 🧪 Software Installation
+# Software Installation
 
 requirements.txt:
    
@@ -74,7 +74,7 @@ RPi.GPIO
 Install dependencies:
                     
                       pip install -r requirements.txt
-▶️ How to Run
+How to Run
 Run the main system:
                        
                        python main.py
@@ -90,7 +90,7 @@ Visit the web interface at:
                        http://localhost:5000
 
 ---------------------------------------------------------------------------------------------------------------
-## 🔍 How It Works
+# How It Works
 
 - The camera captures video frames.
 - The YOLOv8 model detects traffic light color in real time.
