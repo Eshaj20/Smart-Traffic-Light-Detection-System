@@ -63,11 +63,11 @@ requirements.txt:
    
 This file lists all the dependencies.
 
-flask
-opencv-python
-torch
-torchvision
-RPi.GPIO
+            flask
+            opencv-python
+            torch
+            torchvision
+            RPi.GPIO
 
 
 Install dependencies:
