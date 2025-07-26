@@ -10,7 +10,6 @@ This is an AI-based smart traffic light detection system that helps control a ve
 - Automatic control of vehicle movement (stop/go)
 - Modular code with hardware integration
 - Optional Flask backend for web monitoring
-- Ideal for smart mobility and educational projects
 
 ---
 
